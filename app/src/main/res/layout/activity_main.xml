@@ -1,0 +1,266 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_key1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv1_text" />
+
+                <EditText
+                    android:id="@+id/txt_auth_s_senc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.93" 
+                     android:text="@string/default_key" >
+                </EditText>
+            </LinearLayout>
+            
+             <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_key2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tx2_text" />
+
+                <EditText
+                    android:id="@+id/txt_auth_s_mac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.93" 
+                    android:text="@string/default_key" >
+                </EditText>
+            </LinearLayout>
+            
+             
+              <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_key3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv3_text" />
+
+                <EditText
+                    android:id="@+id/txt_auth_dek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.93" 
+                     android:text="@string/default_key" >
+                </EditText>
+            </LinearLayout>
+             
+			 
+              <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_cm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv4_text" />
+
+                <EditText
+                    android:id="@+id/txt_car_manager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.93" >
+                </EditText>
+            </LinearLayout>
+            
+               <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button android:id="@+id/btn_select_cap"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="Select CAP file" />
+
+
+                <EditText
+                    android:id="@+id/txt_cap_file"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.93" 
+                    android:text="@string/default_cap_path"
+                    android:editable="false" >
+                </EditText>
+            </LinearLayout>
+            
+               <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button android:id="@+id/btn_select_apdu"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="Select APDU file" />
+
+
+                <EditText
+                    android:id="@+id/txt_apdu_file"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.93" 
+                    android:text="@string/default_cap_path"
+                    android:editable="false" >
+                </EditText>
+            </LinearLayout>
+            
+                <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv5_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv5_text" />
+
+                <EditText
+                    android:id="@+id/txt_install_param"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.93"
+                    android:text="@string/default_install_param" >
+
+                </EditText>
+            </LinearLayout>
+            
+                
+                 
+              
+                       <LinearLayout
+                			android:layout_width="fill_parent"
+                			android:layout_height="wrap_content"
+                			android:orientation="horizontal" >
+						
+<!-- 							<TextView -->
+<!--                     			android:id="@+id/tv6_text" -->
+<!--                     			android:layout_width="wrap_content" -->
+<!--                     			android:layout_height="wrap_content" -->
+<!--                     			android:text="@string/txt_keyset" /> -->
+
+<!--                 			<EditText -->
+<!--                     			android:id="@+id/txt_key_set" -->
+<!--                     			android:layout_width="wrap_content" -->
+<!--                     			android:layout_height="wrap_content" -->
+<!--                     			android:layout_weight="0.93" > -->
+<!--                 			</EditText> -->
+                                         
+               <CheckBox android:id="@+id/checkbox_autoload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Autoload"
+        />
+               
+               <CheckBox android:id="@+id/checkbox_apdu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="APDU dispatcher only"
+        />
+              
+            		</LinearLayout>
+          
+                       <LinearLayout 
+                           android:layout_width="fill_parent"
+                			android:layout_height="wrap_content"
+                			android:orientation="horizontal" >
+                           >
+                           
+                           <EditText
+                    android:id="@+id/txt_conn_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.93" 
+                    android:hint="Not connected"
+                    android:editable = "false" >
+                </EditText>
+                           
+                           
+                       </LinearLayout>
+           
+                       
+                       <LinearLayout
+                			android:layout_width="fill_parent"
+                			android:layout_height="wrap_content"
+                			android:orientation="horizontal" >
+						
+                           
+                            <Button android:id="@+id/btn_authenticate"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="Authenticate" />
+
+                			 <Button android:id="@+id/btn_upload"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="Upload" />
+                			 
+                			  <Button
+                			      android:id="@+id/btn_dispatcher"
+                			      android:layout_width="wrap_content"
+                			      android:layout_height="wrap_content"
+                			      android:text="APDU Dispatcher" />
+              
+            		</LinearLayout>
+	      
+                        <LinearLayout
+                			android:layout_width="fill_parent"
+                			android:layout_height="wrap_content"
+                			android:orientation="vertical" >
+						
+ <EditText
+            android:id="@+id/txt_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:inputType="text|textMultiLine"
+            android:lines="10"
+            android:minLines="3"
+            android:scrollbars="vertical"
+            android:textSize="15.0sp" />
+            		</LinearLayout>
+                       
+          
+       	   </LinearLayout>
+       	   
+        
+    </ScrollView>
+
+
+</RelativeLayout>

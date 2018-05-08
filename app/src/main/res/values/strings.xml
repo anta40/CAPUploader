@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CAPUploader</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="tv1_text">Key 1 (S_ENC)</string>
+    <string name="tx2_text">Key 2 (S_MAC)</string>
+    <string name="tv3_text">Key 3 (DEK)</string>
+    <string name="tv4_text">Card Manager AID</string>
+    <string name="tv5_text">Install parameters</string>
+    <string name="txt_keyset">Keyset</string>
+    <string name="txt_add">Add</string>
+    <string name="txt_modify">Modify</string>
+    <string name="txt_add_modify">Add/Modify</string>
+    <string name="default_key">414142434445464748494A4B4C4D4E4F</string>
+    <string name="title_activity_dispatcher">APDU Dispatcher</string>
+    <string name="default_apdu">00A4040008A000000003000000</string>
+    <string name="default_cap_path">/storage/emulated/0/CAP/select.cap</string>
+    <string name="default_install_param">0000</string>
+
+</resources>
